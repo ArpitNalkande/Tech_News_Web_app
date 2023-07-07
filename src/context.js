@@ -2,11 +2,11 @@ import React, { useContext, useReducer, useEffect } from 'react';
 import reducer from './reducer';
 
 
-let API = "http://hn.algolia.com/api/v1/search?";
+let API = "https://hn.algolia.com/api/v1/search?";
 
 const initialState = {
   isLoading: true,
-  query: "HTML",
+  query: "",
   nbpages: 0,
   page: 0,
   hits: [],
